@@ -1,15 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AB GYM</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <h1>Hello 👋 I am live on the internet!</h1>
-  <p>This is my first website made using GitHub on a tablet.</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">AB <span>GYM</span></div>
 
-  <button>Click Me</button>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-btn" href="#contact">Join Now</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Transform Your Body<br>With <span>AB GYM</span></h1>
+      <p>
+        Premium training • Modern equipment • Friendly coaches  
+        <br>Start your fitness journey today.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="#pricing">View Plans</a>
+        <a class="btn secondary" href="#contact">Free Trial</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Happy Members</p>
+        </div>
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Open Hours</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Expert Trainers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h2>Get 1 Day Free Trial</h2>
+      <p>Fill the form and we will contact you.</p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="button">Send</button>
+        <p class="small">*This is a demo form for now.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Everything you need to get fit and strong.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Strength Training</h3>
+        <p>Build muscle with proper technique and guided workouts.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cardio Zone</h3>
+        <p>Treadmill, cycling, and fat-burn programs for all levels.</p>
+      </div>
+
+      <div class="card">
+        <h3>Personal Training</h3>
+        <p>One-to-one coaching with customized diet and workout plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section dark">
+    <h2 class="section-title">Membership Plans</h2>
+    <p class="section-subtitle">Choose the plan that fits you.</p>
+
+    <div class="grid">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p class="price">₹999<span>/month</span></p>
+        <ul>
+          <li>Gym Access</li>
+          <li>Cardio Zone</li>
+          <li>Basic Support</li>
+        </ul>
+        <a class="btn primary" href="#contact">Join Basic</a>
+      </div>
+
+      <div class="price-card popular">
+        <div class="badge">Most Popular</div>
+        <h3>Standard</h3>
+        <p class="price">₹1499<span>/month</span></p>
+        <ul>
+          <li>Gym + Cardio</li>
+          <li>Trainer Guidance</li>
+          <li>Workout Plan</li>
+        </ul>
+        <a class="btn primary" href="#contact">Join Standard</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Premium</h3>
+        <p class="price">₹2499<span>/month</span></p>
+        <ul>
+          <li>Personal Training</li>
+          <li>Diet Plan</li>
+          <li>Priority Support</li>
+        </ul>
+        <a class="btn primary" href="#contact">Join Premium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact AB GYM</h2>
+    <p class="section-subtitle">Visit us or call us anytime.</p>
+
+    <div class="contact-box">
+      <div>
+        <h3>📍 Address</h3>
+        <p>Indore, Madhya Pradesh (Demo Address)</p>
+
+        <h3>📞 Phone</h3>
+        <p>+91 98765 43210</p>
+
+        <h3>🕒 Timings</h3>
+        <p>Mon - Sun: 6 AM - 10 PM</p>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn primary" type="button">Send Message</button>
+        <p class="small">*Demo form (we’ll connect real WhatsApp later).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 AB GYM. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
